@@ -3,10 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@supabase/auth-ui-react": "0.4.x",
-    "@supabase/auth-ui-shared": "0.1.x",
     "@supabase/supabase-js": "2.39.x",
-    "jwt-decode": "4.0.x",
     "moment-timezone": "0.5.x",
     "react": "18.2.x",
     "react-dom": "18.2.x",

@@ -1,25 +1,119 @@
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+<html lang="pt-BR">
+<!--<![endif]-->
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<head>
+  <meta charset="utf-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"><!-- Core Meta Data -->
+  <meta name="theme-color" content="#ffffff" />
+  <meta
+          name="description"
+          content="Sala de Espera"
+  />
+  <link rel="apple-touch-icon" href="/logo192.png" />
 
-    <title>Sala Espera</title>
-  </head>
-  <body>
+  <link rel="manifest" href="/manifest.json" />
 
-    <noscript>No juice</noscript>
+  <title>Sala Espera</title>
 
-    <div id="root"></div>
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-  </body>
+  <!-- CSS -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'><!-- Styles -->
+  <link href="css/loader.css" rel="stylesheet" type="text/css">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/ie.css" />
+  <![endif]-->
+  <!-- Javascript -->
+
+  <script src="js/jquery.js"></script>
+
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'
+          integrity='sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz'
+          crossorigin='anonymous'></script>
+
+
+</head>
+<body>
+<div class="preloader">
+  <div class="loading">
+    <h2>
+      Sala
+    </h2>
+    <span class="progress"></span>
+  </div>
+</div>
+
+<div class="wrapper">
+  <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
+    <li class="layer" data-depth="0.00">
+    </li>
+
+    <li class="layer" data-depth="0.10">
+      <div class="background">
+      </div>
+    </li>
+
+    <li class="layer" data-depth="0.20">
+      <div class="title">
+        <h2>
+          Assistência Espiritual 4a. feira
+        </h2>
+        <span class="line"></span>
+      </div>
+    </li>
+
+    <li class="layer" data-depth="0.25">
+      <div class="sphere">
+        <img alt="sphere" width="400" src="images/kindpng_378738.png">
+      </div>
+    </li>
+
+    <li class="layer" data-depth="0.30">
+      <div class="hero">
+        <div id="root"></div>
+      </div>
+    </li>
+
+
+    <li class="layer" data-depth="0.50">
+      <div class="depth-2 flake1">
+        <img alt="flake" src="images/flakes/depth2/flakes1.png">
+      </div>
+
+      <div class="depth-2 flake2">
+        <img alt="flake" src="images/flakes/depth2/flakes2.png">
+      </div>
+    </li>
+
+    <li class="layer" data-depth="0.80">
+      <div class="depth-4">
+        <img alt="flake" src="images/flakes/depth4/flakes.png">
+      </div>
+    </li>
+
+    <li class="layer" data-depth="1.00">
+      <div class="depth-5">
+        <img alt="flake" src="images/flakes/depth5/flakes.png">
+      </div>
+    </li>
+
+
+  </ul>
+</div>
+
+<!-- Javascript -->
+<script src="js/plugins.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
 </html>
