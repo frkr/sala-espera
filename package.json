@@ -1,0 +1,38 @@
+{
+  "name": "sala-espera",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@supabase/auth-ui-react": "0.4.x",
+    "@supabase/auth-ui-shared": "0.1.x",
+    "@supabase/supabase-js": "2.39.x",
+    "moment-timezone": "0.5.x",
+    "react": "18.2.x",
+    "react-dom": "18.2.x",
+    "react-scripts": "5.0.x",
+    "web-vitals": "2.1.x"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && wrangler pages deploy ./build",
+    "preview": "npm run build && wrangler pages dev ./build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "wrangler": "3.37.x"
+  }
+}
